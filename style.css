@@ -1,0 +1,202 @@
+h1{
+  color: red;
+  font-size: 30px;
+}
+h2{
+  color: black;
+}
+
+p{
+  font-size: 20px;
+
+
+}
+a:link{
+  color: blue;
+
+}
+a:visited{
+  color:black;
+
+
+}
+
+a:hover{
+  color:red;
+  transition: all .5s ease;
+
+}
+
+a:active{
+  color: yellow;
+
+}
+
+/*---transparenting div---*/
+#Trans{
+	background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    opacity: 1;
+
+}
+
+/*--- Background image ---*/
+
+  body{
+      background-image: url("pics/wat.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+  }
+
+
+/*---image circle--*/
+.img-circle {
+    border-radius: 50%;
+}
+
+
+/*---Listing--- */
+
+.listing{
+    align-items: center;
+    margin-left: 500px;
+
+}
+
+/*----buttons---*/
+
+.button {
+    background-color: #44336;
+    border: 2px solid;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    float: left;
+    transition-duration: 0.4s;
+    position: relative;
+    max-width: 100%;
+}
+
+nav{
+  width: 1280px;
+  margin:0 auto;
+}
+
+nav a{
+
+  margin-left: 35px;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #FFDF00;
+  color: #000;
+  transition: all .7s ease;
+
+}
+
+/*--table--*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#f5f5f5}
+
+
+/* ---mobile phones:--- */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 414px) and (max-width: 1366px)
+ and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+   table {
+       border-collapse: collapse;
+       max-width: 100%;
+
+   }
+
+
+   th, td {
+       padding: 8px;
+       text-align: left;
+       border-bottom: 1px solid #ddd;
+   }
+
+   tr:hover{background-color:#f5f5f5}
+
+   .button {
+       background-color: red;
+       border: 2px solid;
+       color: black;
+       padding: 10px 24px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 18px;
+       float: left;
+       transition-duration: 0.4s;
+       max-width: 100%;
+       position: absolute;
+   }
+
+
+     body{
+         background-image: url("pics/wat.jpg");
+         background-repeat: no-repeat;
+
+         max-width: 100%;
+
+     }
+
+
+}
+
+
+/*@media only screen and (max-width: 375px) {
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+.button {
+    background-color: red;
+    border: 2px solid;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    float: left;
+    transition-duration: 0.4s;
+    width: 375px;
+}
+}
+*/
